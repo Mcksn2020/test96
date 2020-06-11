@@ -1,1 +1,1 @@
-worker: python bot_telebot.py $PORT
+worker: python bot_telebot.py
