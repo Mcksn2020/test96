@@ -4,6 +4,7 @@ bot=telebot.TeleBot(config.token)
 
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
+        config.cnt+=1
         bot.send_message(message.chat.id,'Привет, это ПАПА')
         
 @bot.message_handler(content_types=['text'])
