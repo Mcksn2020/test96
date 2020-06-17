@@ -15,7 +15,7 @@ g_chs='chs=300x300'            #   размер
 g_chl='chl=ОПЦИОНЫ'                 # название
 g_chc='chco=00FF00'              # цвет линии
 
-gc=gc0+g_cht+'&'+g_chd+'&'+g_chs
+gc=gc0+g_cht+'&'+g_chd+'&'+g_chs+'&'+g_chl+'&'+g_chc
 
 #print(gc)
 
