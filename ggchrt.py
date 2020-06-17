@@ -16,7 +16,7 @@ gc='https://chart.googleapis.com/chart?'
 
 
 g_cht='cht=lxy'                #линия
-g_chd='chd=t:1 70000,70500|66,99'    #точки
+g_chd='chd=t:69000,70500|66,99'    #точки
 #g_chs1='chs=250x100'
 #g_chs2='chs=250x250'
 g_chs='chs=400x400'            #   размер
@@ -24,7 +24,7 @@ g_chl='chl=ОПЦИОНЫ'                 # название
 g_chc='chco=00FF00'              # цвет линии
 g_chttl='chtt=Опционный+портфель'   #название
 g_chtts='chts=FF0000,20,c'         #шрифт названия
-g_chxt='chxt=x,y,r,t'             #оси
+g_chxt='chxt=x,y,r'             #оси
 g_grid='chg=10,20'              #шаг сетки
 #g_chxr='chxr=0,x_ii,x_ee,str(point_calc.x_st)'  #цифры по оси Х
 g_chxr='chxr=0,'+x_ii+','+x_ee+','+str(point_calc.x_st)+''
