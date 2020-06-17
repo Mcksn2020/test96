@@ -7,17 +7,15 @@ gc_helwor='chs=250x100&chd=t:60,40&cht=p3&chl=Hello|World'
 
 #gc=gc0+gc_helwor
 
-g_cht='cht=lxy'
-g_chd='chd=t:10.5,40|7,33'
-g_chs1='chs=250x100'
-g_chs2='chs=250x250'
-g_chs3='chs=300x300'
-g_chl='ОПЦИОНЫ'
+g_cht='cht=lxy'                #линия
+g_chd='chd=t:10.5,40|7,33'    #точки
+#g_chs1='chs=250x100'
+#g_chs2='chs=250x250'
+g_chs='chs=300x300'            #   размер
+g_chl='chl=ОПЦИОНЫ'                 # название
+g_chc='chco=00FF00'              # цвет линии
 
-#gc=gc0+g_cht+'&'+g_chd+'&'+g_chs
+gc=gc0+g_cht+'&'+g_chd+'&'+g_chs+'&'+g_chl+'&'+g_chc
 
-gc1=gc0+g_cht+'&'+g_chd+'&'+g_chs1+'&'+g_chl
-gc2=gc0+g_cht+'&'+g_chd+'&'+g_chs2+'&'+g_chl
-gc3=gc0+g_cht+'&'+g_chd+'&'+g_chs3+'&'+g_chl
+print(gc)
 
-#print(gc)
