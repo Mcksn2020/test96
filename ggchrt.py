@@ -1,6 +1,6 @@
 #'https://chart.googleapis.com/chart?chs=250x100&chd=t:60,40&cht=p3&chl=Hello|World'
 #здесь строим график
-
+#все взято отсюда https://developers.google.com/chart/image/docs/gallery/line_charts
 
 gc0='https://chart.googleapis.com/chart?'
 gc_helwor='chs=250x100&chd=t:60,40&cht=p3&chl=Hello|World'
@@ -16,9 +16,11 @@ g_chl='chl=ОПЦИОНЫ'                 # название
 g_chc='chco=00FF00'              # цвет линии
 g_chttl='chtt=Опционный+портфель'   #название
 g_chtts='chts=FF0000,20,c'         #шрифт названия
-
+g_chxt='chxt=x,y,r,t'
+g_grid='chg=10,20'
 
 gc=gc0+g_cht+'&'+g_chd+'&'+g_chs+'&'+g_chl+'&'+g_chc+'&'+g_chttl+'&'+g_chtts
+gc=gc+'&'+g_chxt+'&'+g_grid
 
 #print(gc)
 
