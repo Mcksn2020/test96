@@ -16,7 +16,7 @@ gc='https://chart.googleapis.com/chart?'
 
 
 g_cht='cht=lxy'                #линия
-g_chd='chd=t:1 10,20|66,99'    #точки
+g_chd='chd=t:1 70000,70500|66,99'    #точки
 #g_chs1='chs=250x100'
 #g_chs2='chs=250x250'
 g_chs='chs=400x400'            #   размер
