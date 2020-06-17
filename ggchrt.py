@@ -14,8 +14,11 @@ g_chd='chd=t:10.5,40|7,33'    #точки
 g_chs='chs=300x300'            #   размер
 g_chl='chl=ОПЦИОНЫ'                 # название
 g_chc='chco=00FF00'              # цвет линии
+g_chttl='chtt=Опционный+портфель'   #название
+g_chtts='chts=FF0000,20,c'         #шрифт названия
 
-gc=gc0+g_cht+'&'+g_chd+'&'+g_chs+'&'+g_chl+'&'+g_chc
+
+gc=gc0+g_cht+'&'+g_chd+'&'+g_chs+'&'+g_chl+'&'+g_chc+'&'+g_chttl+'&'+g_chtts
 
 #print(gc)
 
