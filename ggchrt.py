@@ -1,6 +1,7 @@
 #'https://chart.googleapis.com/chart?chs=250x100&chd=t:60,40&cht=p3&chl=Hello|World'
 #здесь строим график
-#все взято отсюда https://developers.google.com/chart/image/docs/gallery/line_charts
+#все взято отсюда https://developers.google.com/chart/image/docs/gallery/line_charts
+
 import point_calc
 
 #x11=str(point_calc.x1)
@@ -17,7 +18,7 @@ gc='https://chart.googleapis.com/chart?'
 
 g_cht='cht=lxy'                #линия
 #g_chd='chd=t:10,20|66,99'    #точки строго в процентах
-g_chd='chd=t:'+point_calc.x1+','+point_calc.x2+','+point_calc.x3+'|33,66,99'
+g_chd='chd=t:'+point_calc.x1+','+point_calc.x2+','+point_calc.x3+'|33,66,99|0,100|50,50'
 #g_chs1='chs=250x100'
 #g_chs2='chs=250x250'
 g_chs='chs=400x400'            #   размер
