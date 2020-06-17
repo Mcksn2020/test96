@@ -11,7 +11,7 @@ g_cht='cht=lxy'
 g_chd='chd=t:10.5,40|7,33'
 g_chs1='chs=250x100'
 g_chs2='chs=250x250'
-g_chs3='chs=500x750'
+g_chs3='chs=300x300'
 g_chl='ОПЦИОНЫ'
 
 #gc=gc0+g_cht+'&'+g_chd+'&'+g_chs
