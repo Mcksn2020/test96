@@ -3,6 +3,7 @@ import config
 import ggchrt
 bot=telebot.TeleBot(config.token)
 cnt=0
+print(ggchrt.gc)
 
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
@@ -14,9 +15,9 @@ def get_text_messages(message):
     if message.text=='Привет':
          bot.send_message(message.from_user.id,'Привет, кагдила?')
     elif message.text=="Photo":
-         bot.send_document(message.from_user.id,ggchrt.gs)
+         bot.send_document(message.from_user.id,ggchrt.gc)
     elif message.text=='Document':
-         bot.send_document(message.from_user.id,ggchrt.gs)       
+         bot.send_document(message.from_user.id,ggchrt.gc)       
     else:
         bot.send_message(message.from_user.id,'Ну да')
 bot.polling(none_stop=True,interval=0)
