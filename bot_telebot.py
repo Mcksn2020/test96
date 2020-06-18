@@ -3,8 +3,6 @@ import config
 import ggchrt
 from telebot import types
 
-cnt_d=0
-
 bot=telebot.TeleBot(config.token)
 
 keyboard0 = types.ReplyKeyboardMarkup(True)
