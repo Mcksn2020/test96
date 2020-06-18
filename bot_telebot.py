@@ -7,12 +7,12 @@ cnt_d=0
 
 bot=telebot.TeleBot(config.token)
 
-keyboard0 = types.ReplyKeyboardMarkup()
-keyboard0.row('Voc', 'Standard Srategy') #,'Build You Strategy','Quiz Strategy')
+#keyboard0 = types.ReplyKeyboardMarkup()
+#keyboard0.row('Voc', 'Standard Srategy') #,'Build You Strategy','Quiz Strategy')
 
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
-        cnt_d+=1
+        #cnt_d+=1
         bot.send_message(message.chat.id,'Привет, это ПАПА')
         #,reply_markup=keyboard0)
         
