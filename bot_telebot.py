@@ -1,6 +1,7 @@
 import telebot
 import config
 import ggchrt
+import texts
 from telebot import types
 
 bot=telebot.TeleBot(config.token)
@@ -19,8 +20,7 @@ key0.add(k_btn14)
 
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
-        bot.send_message(message.chat.id,'Привет, это ПАПА'
-        ,reply_markup=key0)
+        bot.send_message(message.chat.id, texts.s1,reply_markup=key0)
         
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
