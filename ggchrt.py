@@ -32,7 +32,7 @@ g_chxt='chxt=x,y'             #оси
 g_grid='chg=20,20'              #шаг сетки
 #g_chxr='chxr=0,x_ii,x_ee,str(point_calc.x_st)'  #цифры по оси Х
 g_chxr='chxr=0,'+x_ii+','+x_ee+','+str(point_calc.x_st)+'|1,-1000,1000'
-g_chm='chm=@d,0000FF,0,0.5:0.5,15'
+g_chm='chm=@V,0000FF,0,0.5:0.5,5'
 
 
 
