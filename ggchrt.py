@@ -28,16 +28,20 @@ g_chl='chl=ОПЦИОНЫ'                 # название
 g_chc='chco=008000,000000'              # цвет линии
 g_chttl='chtt=Опционный+портфель'   #название
 g_chtts='chts=FF0000,20,c'         #шрифт названия
-g_chxt='chxt=x,y'             #оси
+g_chxt='chxt=x,y,t'             #оси
 g_grid='chg=20,20'              #шаг сетки
 #g_chxr='chxr=0,x_ii,x_ee,str(point_calc.x_st)'  #цифры по оси Х
 g_chxr='chxr=0,'+x_ii+','+x_ee+','+str(point_calc.x_st)+'|1,-1000,1000'
 g_chm='chm=R,0000FF,0,0.5,0.51'
+g_chxl='chxl=2:|69500'
+g_chxp='chxp=2,50'
+g_chxs='chxs=2,0000FF,9,-1,t,0000FF'
+g_chxtc='chxtc=2,-400'
 
 
 
 gc=gc+g_cht+'&'+g_chd+'&'+g_chs+'&'+g_chc+'&'+g_chttl+'&'+g_chtts
-gc=gc+'&'+g_chxt+'&'+g_grid+'&'+ g_chxr+'&'+g_chm
+gc=gc+'&'+g_chxt+'&'+g_grid+'&'+ g_chxr+'&'+g_chxl+'&'+g_chxp+'&'+g_chxs+'&'+g_chxtc
 
 #print(gc)
 
