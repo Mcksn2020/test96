@@ -5,13 +5,22 @@ from telebot import types
 
 bot=telebot.TeleBot(config.token)
 
-keyboard0 = types.ReplyKeyboardMarkup(True)
-keyboard0.row('Voc', 'Standard Srategy','Build You Strategy','Quiz Strategy')
+key0 = types.InlineKeyboardMarkup()
+k_btn11=types.InlineKeyboardButton('Voc',callback_data='Voc')
+k_btn12=types.InlineKeyboardButton('Standard Strategy',callback_data='SS')
+k_btn13=types.InlineKeyboardButton('Build Your Strategy',callback_data='BYS')
+k_btn14=types.InlineKeyboardButton('Quiz Strategy',callback_data='QS')
+key0.add(k_btn11)
+key0.add(k_btn12)
+key0.add(k_btn13)
+key0.add(k_btn14)
+
+#keyboard0.row('Voc', 'Standard Srategy','Build You Strategy','Quiz Strategy')
 
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
         bot.send_message(message.chat.id,'Привет, это ПАПА'
-        ,reply_markup=keyboard0)
+        ,reply_markup=key0)
         
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
