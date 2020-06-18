@@ -21,8 +21,8 @@ def get_text_messages(message):
          bot.send_message(message.from_user.id,'Привет, кагдила?')
     elif message.text=="Photo":
          bot.send_document(message.from_user.id,ggchrt.gc)
-         #bot.send_document(message.from_user.id,ggchrt.gc2)
-         #bot.send_document(message.from_user.id,ggchrt.gc3)
+    elif message.text=='Voc':
+         bot.send_message(message.from_user_id,'Словаря еще нет')
     else:
         bot.send_message(message.from_user.id,'Ну да')
 bot.polling(none_stop=True,interval=0)
