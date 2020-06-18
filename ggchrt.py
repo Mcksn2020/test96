@@ -18,8 +18,8 @@ gc='https://chart.googleapis.com/chart?'
 
 g_cht='cht=lxy'                #линия
 #g_chd='chd=t:10,20|66,99'    #точки строго в процентах
-g_chd='chd=t:'+point_calc.x1+','+point_calc.x2+','+point_calc.x3
-g_chd=g_chd+'|'+point_calc.y1+','+point_calc.y2+','+point_calc.y3
+g_chd='chd=t:'+point_calc.x0+','+point_calc.x1+','+point_calc.x2+','+point_calc.x3
+g_chd=g_chd+'|'+point_calc.y0+','+point_calc.y1+','+point_calc.y2+','+point_calc.y3
 g_chd=g_chd+'|0,100|50,50'
 #g_chs1='chs=250x100'
 #g_chs2='chs=250x250'
@@ -32,7 +32,7 @@ g_chxt='chxt=x,y'             #оси
 g_grid='chg=20,20'              #шаг сетки
 #g_chxr='chxr=0,x_ii,x_ee,str(point_calc.x_st)'  #цифры по оси Х
 g_chxr='chxr=0,'+x_ii+','+x_ee+','+str(point_calc.x_st)+'|1,-1000,1000'
-g_chm='chm=@V,0000FF,0,50:50,1'
+g_chm='chm=V,0000FF,0,1,2'
 
 
 
