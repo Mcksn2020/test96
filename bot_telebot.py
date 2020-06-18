@@ -19,8 +19,13 @@ def get_text_messages(message):
          bot.send_message(message.from_user.id,'Привет, кагдила?')
     elif message.text=="Photo":
          bot.send_document(message.from_user.id,ggchrt.gc)
-    elif message.text=='Voc':
-         bot.send_message(message.from_user_id,'Словаря еще нет')
     else:
         bot.send_message(message.from_user.id,'Ну да')
+
+@bot.callback_query_handler(func=lambda call:True)
+def btn_answer (call):
+     if call.data=='Voc':
+             bot.send_message(call.message.chat.id,'Словаря пока нет ')
+             
 bot.polling(none_stop=True,interval=0)
+
