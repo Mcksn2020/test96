@@ -16,7 +16,9 @@ key0.add(k_btn12)
 key0.add(k_btn13)
 key0.add(k_btn14)
 
-#keyboard0.row('Voc', 'Standard Srategy','Build You Strategy','Quiz Strategy')
+key1=types.InlineKeyboardMarkup()
+key1.add(types.InlineKeyboardButton('Коллы', callback_data='Call_1'))
+
 
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
@@ -31,10 +33,20 @@ def get_text_messages(message):
     else:
         bot.send_message(message.from_user.id,'Ну да')
 
+
+
 @bot.callback_query_handler(func=lambda call:True)
 def btn_answer (call):
-     if call.data=='Voc':
-             bot.send_message(call.message.chat.id,'Словаря пока нет ')
+     if call.data=='SS':
+             #bot.send_message(call.message.chat.id,'Словаря пока нет ')
+             #key1=types.InlineKeyboardMarkup().add(types.InlineKeyboardButton('Покупка коллов', callback_data='Call_1'))
+             bot.send_message(call.message.chat.id,'Текст1',reply_markup=key1)
+     elif call.data=='Call_1':
+             bot.send_message(call.message.chat.id,'Текст2')
+             bot.send_video(call.message.chat.id,'BAACAgIAAxkBAAMOXvHjt2erDN80Mb5SNq-ktev8faUAAhUHAAJnyIhLOdd10nI-wCoaBA')
+             bot.send_message(call.message.chat.id,'Текст3')
+             print(message)
+
              
 bot.polling(none_stop=True,interval=0)
 
